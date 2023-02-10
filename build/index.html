@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Популярные товары</title>
+</head>
+<body>
+    <div class="container">
+        <section class="catalog">
+            <h2 class="visually-hidden">Каталог товаров</h2>
+            <div class="catalog-breadcrums breadcrums">
+                <ul class="breadcrums-list">
+                    <span class="visually-hidden">Хлебные крошки.</span>
+                    <li class="breadcrums-item">
+                        <a class="breadcrums-link active" href="#">популярные товары</a>
+                    </li>
+                    <li class="breadcrums-item">
+                        <a class="breadcrums-link" href="#">Недавно купили</a>
+                    </li>
+                    <li class="breadcrums-item">
+                        <a class="breadcrums-link" href="#">Вас может заинтересовать</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog-products products">
+                <ul class="products-list">
+                    <li class="products-card">
+                        <span class="visually-hidden">Карточка товара.</span>
+                        <div class="products-card-image-wrapper">
+                            <a class="products-card-icon-link products-card-icon-link-like-link" href="#">
+                                <svg height="20" width="20">
+                                    <use xlink:href="./img/sprite.svg#like-icon"></use>
+                                </svg>
+                            </a>
+                            <a class="products-card-icon-link products-card-icon-link-substract-link" href="#">
+                                <svg height="20" width="20">
+                                    <use xlink:href="./img/sprite.svg#substract-icon"></use>
+                                </svg>
+                            </a>
+                            <img class="products-card-image" src="./img/empty-image.jpg" width="334" height="334" alt="Нет изображения.">
+                            <ol class="product-card-pagination">
+                                <span class="visually-hidden">Список кнопок смены слайда в карточке товара.</span>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button active"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="products-card-content">
+                            <a class="products-card-title-link" href="#">
+                                <h3 class="products-card-title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                            </a>
+                            <div class="products-card-price-wrapper">
+                                <span class="visually-hidden">Стоимость товара.</span>
+                                <b class="products-card-price">600 ₽</b>
+                                <span class="visually-hidden">Старая цена</span>
+                                <span class="products-card-price_old">810 ₽</span>
+                            </div>
+                            <div class="products-card-button-wrapper">
+                                <div class="counter">
+                                    <button class="counter-button button btn-min" type="button">
+                                        <span class="visually-hidden">Кнопка уменьшения.</span>
+                                        <svg class="counter-button-icon" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z" fill="#8D9295"/>
+                                        </svg>                                            
+                                    </button>
+                                    <input class="counter-input" type="number" placeholder="1" name="edult" id="edult">
+                                    <button class="counter-button button btn-max" type="button">
+                                        <span class="visually-hidden">Кнопка увеличения.</span>
+                                        <svg class="counter-button-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>  
+                                    </button>
+                                </div>
+                                <a class="button products-card-button" href="#">
+                                    <span class="visually-hidden">Кнопка Добавить в корзину.</span>
+                                    <svg class="products-card-button-icon"width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 1C0.5 0.447715 0.947715 0 1.5 0H3.88919C4.30755 0 4.6817 0.260434 4.82697 0.652768L5.69608 3H19.5C19.8095 3 20.1016 3.14331 20.2909 3.38811C20.4803 3.6329 20.5457 3.95159 20.4679 4.25117L19.3931 8.39351C19.0498 9.71634 17.8559 10.64 16.4892 10.64H7.73613L7.97647 11.3293C8.11652 11.7309 8.49534 12 8.92071 12H16C16.5523 12 17 12.4477 17 13C17 13.5523 16.5523 14 16 14H8.92071C7.6446 14 6.50815 13.1927 6.08798 11.9878L5.38414 9.96925C5.3727 9.93645 5.36298 9.90307 5.35501 9.86925L4.04079 4.28934L3.19311 2H1.5C0.947715 2 0.5 1.55228 0.5 1ZM6.26289 5L7.12021 8.64H16.4892C16.9448 8.64 17.3427 8.33211 17.4572 7.89117L18.2074 5H6.26289ZM9.5 16.5C9.5 17.3284 8.82843 18 8 18C7.17157 18 6.5 17.3284 6.5 16.5C6.5 15.6716 7.17157 15 8 15C8.82843 15 9.5 15.6716 9.5 16.5ZM16 18C16.8284 18 17.5 17.3284 17.5 16.5C17.5 15.6716 16.8284 15 16 15C15.1716 15 14.5 15.6716 14.5 16.5C14.5 17.3284 15.1716 18 16 18Z" fill="black"/>
+                                    </svg>
+                                    В корзину</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="products-card">
+                        <span class="visually-hidden">Карточка товара.</span>
+                        <div class="products-card-image-wrapper">
+                            <a class="products-card-icon-link products-card-icon-link-like-link" href="#">
+                                <svg height="20" width="20">
+                                    <use xlink:href="./img/sprite.svg#like-icon"></use>
+                                </svg>
+                            </a>
+                            <a class="products-card-icon-link products-card-icon-link-substract-link" href="#">
+                                <svg height="20" width="20">
+                                    <use xlink:href="./img/sprite.svg#substract-icon"></use>
+                                </svg>
+                            </a>
+                            <img class="products-card-image" src="./img/card-image-1.jpg" width="334" height="334" alt="Горшок с цветами.">
+                            <ol class="product-card-pagination">
+                                <span class="visually-hidden">Список кнопок смены слайда в карточке товара.</span>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button active"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="products-card-content">
+                            <a class="products-card-title-link" href="#">
+                                <h3 class="products-card-title">Кашпо для цветов керамическое СИМПЛГРЕЙ</h3>
+                            </a>
+                            <div class="products-card-price-wrapper">
+                                <span class="visually-hidden">Стоимость товара.</span>
+                                <b class="products-card-price">450 ₽</b>
+                            </div>
+                            <div class="products-card-button-wrapper">
+                                <div class="counter">
+                                    <button class="counter-button button btn-min" type="button">
+                                        <span class="visually-hidden">Кнопка уменьшения.</span>
+                                        <svg class="counter-button-icon" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z" fill="#8D9295"/>
+                                        </svg>                                            
+                                    </button>
+                                    <input class="counter-input" type="number" placeholder="1" name="edult" id="edult">
+                                    <button class="counter-button button btn-max" type="button">
+                                        <span class="visually-hidden">Кнопка увеличения.</span>
+                                        <svg class="counter-button-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>  
+                                    </button>
+                                </div>
+                                <a class="button products-card-button" href="#">
+                                    <span class="visually-hidden">Кнопка Добавить в корзину.</span>
+                                    <svg class="products-card-button-icon"width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 1C0.5 0.447715 0.947715 0 1.5 0H3.88919C4.30755 0 4.6817 0.260434 4.82697 0.652768L5.69608 3H19.5C19.8095 3 20.1016 3.14331 20.2909 3.38811C20.4803 3.6329 20.5457 3.95159 20.4679 4.25117L19.3931 8.39351C19.0498 9.71634 17.8559 10.64 16.4892 10.64H7.73613L7.97647 11.3293C8.11652 11.7309 8.49534 12 8.92071 12H16C16.5523 12 17 12.4477 17 13C17 13.5523 16.5523 14 16 14H8.92071C7.6446 14 6.50815 13.1927 6.08798 11.9878L5.38414 9.96925C5.3727 9.93645 5.36298 9.90307 5.35501 9.86925L4.04079 4.28934L3.19311 2H1.5C0.947715 2 0.5 1.55228 0.5 1ZM6.26289 5L7.12021 8.64H16.4892C16.9448 8.64 17.3427 8.33211 17.4572 7.89117L18.2074 5H6.26289ZM9.5 16.5C9.5 17.3284 8.82843 18 8 18C7.17157 18 6.5 17.3284 6.5 16.5C6.5 15.6716 7.17157 15 8 15C8.82843 15 9.5 15.6716 9.5 16.5ZM16 18C16.8284 18 17.5 17.3284 17.5 16.5C17.5 15.6716 16.8284 15 16 15C15.1716 15 14.5 15.6716 14.5 16.5C14.5 17.3284 15.1716 18 16 18Z" fill="black"/>
+                                    </svg>
+                                    В корзину</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="products-card">
+                        <span class="visually-hidden">Карточка товара.</span>
+                        <div class="products-card-image-wrapper">
+                            <a class="products-card-icon-link products-card-icon-link-like-link" href="#">
+                                <svg height="20" width="20">
+                                    <use xlink:href="./img/sprite.svg#like-icon"></use>
+                                </svg>
+                            </a>
+                            <a class="products-card-icon-link products-card-icon-link-substract-link" href="#">
+                                <svg height="20" width="20">
+                                    <use xlink:href="./img/sprite.svg#substract-icon"></use>
+                                </svg>
+                            </a>
+                            <a class="products-card-icon-link products-card-icon-link-hit-link" href="#">
+                                <svg height="50" width="50">
+                                    <use xlink:href="./img/sprite.svg#hit-icon"></use>
+                                </svg>
+                            </a>
+                            <img class="products-card-image" src="./img/card-image-2.jpg" width="334" height="334" alt="Умные часы.">
+                            <ol class="product-card-pagination">
+                                <span class="visually-hidden">Список кнопок смены слайда в карточке товара.</span>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button active"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="products-card-content">
+                            <a class="products-card-title-link" href="#">
+                                <h3 class="products-card-title">Умные часы SMARTWATCH XM 109 черный</h3>
+                            </a>
+                            <div class="products-card-price-wrapper">
+                                <span class="visually-hidden">Стоимость товара.</span>
+                                <b class="products-card-price">12 999 ₽</b>
+                            </div>
+                            <div class="products-card-button-wrapper">
+                                <div class="counter">
+                                    <button class="counter-button button btn-min" type="button">
+                                        <span class="visually-hidden">Кнопка уменьшения.</span>
+                                        <svg class="counter-button-icon" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z" fill="#8D9295"/>
+                                        </svg>                                            
+                                    </button>
+                                    <input class="counter-input" type="number" placeholder="1" name="edult" id="edult">
+                                    <button class="counter-button button btn-max" type="button">
+                                        <span class="visually-hidden">Кнопка увеличения.</span>
+                                        <svg class="counter-button-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>  
+                                    </button>
+                                </div>
+                                <a class="button products-card-button" href="#">
+                                    <span class="visually-hidden">Кнопка Добавить в корзину.</span>
+                                    <svg class="products-card-button-icon"width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 1C0.5 0.447715 0.947715 0 1.5 0H3.88919C4.30755 0 4.6817 0.260434 4.82697 0.652768L5.69608 3H19.5C19.8095 3 20.1016 3.14331 20.2909 3.38811C20.4803 3.6329 20.5457 3.95159 20.4679 4.25117L19.3931 8.39351C19.0498 9.71634 17.8559 10.64 16.4892 10.64H7.73613L7.97647 11.3293C8.11652 11.7309 8.49534 12 8.92071 12H16C16.5523 12 17 12.4477 17 13C17 13.5523 16.5523 14 16 14H8.92071C7.6446 14 6.50815 13.1927 6.08798 11.9878L5.38414 9.96925C5.3727 9.93645 5.36298 9.90307 5.35501 9.86925L4.04079 4.28934L3.19311 2H1.5C0.947715 2 0.5 1.55228 0.5 1ZM6.26289 5L7.12021 8.64H16.4892C16.9448 8.64 17.3427 8.33211 17.4572 7.89117L18.2074 5H6.26289ZM9.5 16.5C9.5 17.3284 8.82843 18 8 18C7.17157 18 6.5 17.3284 6.5 16.5C6.5 15.6716 7.17157 15 8 15C8.82843 15 9.5 15.6716 9.5 16.5ZM16 18C16.8284 18 17.5 17.3284 17.5 16.5C17.5 15.6716 16.8284 15 16 15C15.1716 15 14.5 15.6716 14.5 16.5C14.5 17.3284 15.1716 18 16 18Z" fill="black"/>
+                                    </svg>
+                                    В корзину</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="products-card">
+                        <span class="visually-hidden">Карточка товара.</span>
+                        <div class="products-card-image-wrapper">
+                            <a class="products-card-icon-link products-card-icon-link-like-link" href="#">
+                                <svg height="20" width="20">
+                                    <use xlink:href="./img/sprite.svg#like-icon"></use>
+                                </svg>
+                            </a>
+                            <a class="products-card-icon-link products-card-icon-link-substract-link" href="#">
+                                <svg height="20" width="20">
+                                    <use xlink:href="./img/sprite.svg#substract-icon"></use>
+                                </svg>
+                            </a>
+                            <a class="products-card-icon-link products-card-icon-link-new-link" href="#">
+                                <svg height="50" width="50">
+                                    <use xlink:href="./img/sprite.svg#new-icon"></use>
+                                </svg>
+                            </a>
+                            <img class="products-card-image" src="./img/card-image-3.jpg" width="334" height="334" alt="Драгоценное кольцо.">
+                            <ol class="product-card-pagination">
+                                <span class="visually-hidden">Список кнопок смены слайда в карточке товара.</span>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button active"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                                <li class="product-card-pagination-item">
+                                    <button class="product-card-pagination-button"></button>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="products-card-content">
+                            <a class="products-card-title-link" href="#">
+                                <h3 class="products-card-title">Золотое кольцо МАЛИКА с аметистом и фианитами</h3>
+                            </a>
+                            <div class="products-card-price-wrapper">
+                                <span class="visually-hidden">Стоимость товара.</span>
+                                <b class="products-card-price">15 700 ₽</b>
+                            </div>
+                            <div class="products-card-button-wrapper">
+                                <div class="counter">
+                                    <button class="counter-button button btn-min" type="button">
+                                        <span class="visually-hidden">Кнопка уменьшения.</span>
+                                        <svg class="counter-button-icon" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z" fill="#8D9295"/>
+                                        </svg>                                            
+                                    </button>
+                                    <input class="counter-input" type="number" placeholder="1" name="edult" id="edult">
+                                    <button class="counter-button button btn-max" type="button">
+                                        <span class="visually-hidden">Кнопка увеличения.</span>
+                                        <svg class="counter-button-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>  
+                                    </button>
+                                </div>
+                                <a class="button products-card-button" href="#">
+                                    <span class="visually-hidden">Кнопка Добавить в корзину.</span>
+                                    <svg class="products-card-button-icon"width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 1C0.5 0.447715 0.947715 0 1.5 0H3.88919C4.30755 0 4.6817 0.260434 4.82697 0.652768L5.69608 3H19.5C19.8095 3 20.1016 3.14331 20.2909 3.38811C20.4803 3.6329 20.5457 3.95159 20.4679 4.25117L19.3931 8.39351C19.0498 9.71634 17.8559 10.64 16.4892 10.64H7.73613L7.97647 11.3293C8.11652 11.7309 8.49534 12 8.92071 12H16C16.5523 12 17 12.4477 17 13C17 13.5523 16.5523 14 16 14H8.92071C7.6446 14 6.50815 13.1927 6.08798 11.9878L5.38414 9.96925C5.3727 9.93645 5.36298 9.90307 5.35501 9.86925L4.04079 4.28934L3.19311 2H1.5C0.947715 2 0.5 1.55228 0.5 1ZM6.26289 5L7.12021 8.64H16.4892C16.9448 8.64 17.3427 8.33211 17.4572 7.89117L18.2074 5H6.26289ZM9.5 16.5C9.5 17.3284 8.82843 18 8 18C7.17157 18 6.5 17.3284 6.5 16.5C6.5 15.6716 7.17157 15 8 15C8.82843 15 9.5 15.6716 9.5 16.5ZM16 18C16.8284 18 17.5 17.3284 17.5 16.5C17.5 15.6716 16.8284 15 16 15C15.1716 15 14.5 15.6716 14.5 16.5C14.5 17.3284 15.1716 18 16 18Z" fill="black"/>
+                                    </svg>
+                                    В корзину</a>
+                            </div>
+                        </div>
+                    </li>
+               
+                </ul>
+                <button class="control-button button button-prev" type="button">
+                    <span class="visually-hidden">Кнопка переключения слайда. Кнопка предыдущий слайд.</span>
+                    <svg height="20" width="11">
+                        <use xlink:href="./img/sprite.svg#arrow-icon"></use>
+                    </svg>
+                </button>
+                <button class="control-button button button-next" type="button">
+                    <span class="visually-hidden">Кнопка переключения слайда. Кнопка слудующий слайд.</span>
+                    <svg height="20" width="11">
+                        <use xlink:href="./img/sprite.svg#arrow-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
