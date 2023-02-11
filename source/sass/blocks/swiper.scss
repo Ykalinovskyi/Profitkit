@@ -1,0 +1,69 @@
+.swiper {
+    max-width: 1396px;
+
+    @media(max-width: $laptop) {
+        max-width: 900px;
+    }
+
+    @media(max-width: $tablet) {
+        max-width: 688px;
+    }
+
+    @media(max-width: $mobile) {
+        max-width: 390px;
+    }
+    @media(max-width: $phone) {
+        max-width: 300px;
+    }
+}
+
+.swiper-slide {
+    width: 334px !important;
+    max-width: 334px;
+
+    @media(max-width: $mobile) {
+        width: 260px !important;
+        max-width: 260px;
+    }
+}
+
+.control-button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid $corner;
+    border-radius: 5px;   
+    position: relative;
+    background-color: transparent;
+    transition: all .3s ease-in;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    &:hover,
+    &:focus {
+        border-color: $gold;
+    }
+
+    @media(max-width: $desktop) {
+        display: none;
+    }
+}
+
+.control-button svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.button-prev {
+    transform: rotate(-180deg);
+    left: 0;
+}
+
+.button-next {
+    right: 0;
+}

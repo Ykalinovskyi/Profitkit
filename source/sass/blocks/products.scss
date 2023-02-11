@@ -2,41 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    @media(max-width: $desktop) {
-        justify-content: space-around;
-    }
-    @media(max-width: $mobile) {
-        justify-content: flex-start;
-        padding: 0 40px 0 20px;
-    }
 }
 
 .products-list {
     @include reset-list;
-    display: grid;
-    grid-template-columns: repeat(4, 334px);
-    gap: 20px;
-    order: 2;
-
-    @media(max-width: $desktop) {
-        grid-template-columns: repeat(3, 334px)
-    }
-
-    @media(max-width: $laptop) {
-        grid-template-columns: 334px 334px;
-    }
-
-    @media(max-width: $tablet) {
-        grid-template-columns: 260px 260px;
-    }
-
-    @media(max-width: $mobile) {
-        display: flex;
-        max-width: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
 }
 
 .products-card {
@@ -44,18 +13,17 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    width: 334px !important;
+    height: auto !important;
+
     @media(max-width: $mobile) {
-        min-width: 260px;
+        width: 260px !important;
     }
 }
 
 
 .products-card-image-wrapper {
     position: relative;
-
-    @media(max-width: $tablet) {
-        
-    }
 }
 
 .products-card-icon-link {
@@ -98,11 +66,17 @@
     display: block;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
-    @media(max-width: $tablet) {
+
+    @media(max-width: $mobile) {
         object-fit: contain;
         object-position: center;
         max-height: 260px;
     }
+}
+
+.product-card-image-container {
+    max-height: 334px;
+    overflow: hidden;
 }
 
 
@@ -144,9 +118,11 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    @media(max-width: $tablet) {
+
+    @media(max-width: $mobile) {
         padding: 10px 20px 20px;
     }
+    
 }
 
 .products-card-title-link {
@@ -173,7 +149,7 @@
     color: $black;
     transition: all .3s ease-in;
 
-    @media(max-width: $tablet) {
+    @media(max-width: $mobile) {
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 15px;
@@ -203,7 +179,7 @@
     justify-content: space-between;
     margin-top: auto;
 
-    @media(max-width: $tablet) {
+    @media(max-width: $mobile) {
         justify-content: center;
     }
 }
@@ -234,8 +210,9 @@
         background-color: darken($gold, 10);
     }
 
-    @media(max-width: $tablet) {
+    @media(max-width: $mobile) {
         padding: 16px 20px
     }
+    
     
 }

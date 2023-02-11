@@ -1,10 +1,32 @@
+.catalog-breadcrums {
+    @media(max-width: $desktop) {
+        max-width: 1396px;
+    }
+    @media(max-width: $laptop) {
+        max-width: 900px;
+    }
+    @media(max-width: $tablet) {
+        max-width: 680px;
+    }
+    @media(max-width: $mobile) {
+        padding-left: 20px;
+    }
+    @media(max-width: $phone) {
+        padding-left: 40px;
+    }
+    @media(max-width: 320px) {
+        padding-left: 20px;
+    }
+}
+
 .breadcrums-list {
     @include reset-list;
     @include d-flex;
     justify-content: flex-start;
     gap: 25px;
     align-items: center;
-    @media(max-width: $tablet) {
+
+    @media(max-width: $mobile) {
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
@@ -16,16 +38,15 @@
     &>a:not(.active) {
         border-bottom: 2px dotted $grey;
     }
-
-    @media(max-width: $tablet) {
-       margin-bottom: 5px;
-        &:not(:first-child) {
-            margin-bottom: 7px;
-        }
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
+    @media(max-width: $mobile) {
+        margin-bottom: 5px;
+         &:not(:first-child) {
+             margin-bottom: 7px;
+         }
+         &:last-child{
+             margin-bottom: 0;
+         }
+     }
 }
 
 .breadcrums-link {
@@ -47,10 +68,11 @@
         line-height: 40px;
         transition: all .3s ease-in;
         &:hover {
-            color: lighten($color: $grey, $amount: 5)
+            color: lighten($color: $grey, $amount: 5);
         } 
     }
 }
+
 
 @media(max-width: $laptop){
     .breadcrums-link{

@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'fonts';
 @import 'mixins';
+//@import "media";
 
 *,
 *::before,
@@ -18,10 +19,6 @@ body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
     font-weight: normal;
-
-    @media(max-width: $mobile) {
-        overflow-x: hidden ;
-    }
 }
 
 .visually-hidden {
@@ -38,19 +35,10 @@ body {
 .container {
     max-width: 1568px;
     margin: 0 auto;
-    height: 100vh;
+    //height: 100vh;
     display: flex;
     margin-top: 40px;
     justify-content: center;
-
-    @media(min-width: 2500px) {
-        align-items: center;
-    }
-
-    @media(max-width: $mobile) {
-        max-width: 100%;
-        overflow: hidden;
-    }
 }
 
 .button {
@@ -61,25 +49,15 @@ body {
     margin: 0 auto;
     margin-bottom: 40px;
     max-width: 1396px;
-    @media(max-width: $desktop) {
-        max-width: 1042px;
-    }
-    @media(max-width: $laptop) {
-        max-width: 688px;
-    }
-    @media(max-width: $tablet) {
-        max-width: 538px;
-    }
-    @media(max-width: $mobile) {
-        padding-left: 20px;
-    }
 }
 @import "./blocks/breadcrums";
 
 .catalog {
     width: 100%;
+    position: relative;
+
 }
 @import "./blocks/products";
-@import "./blocks/control-btn";
+@import "./blocks/swiper";
 @import "./blocks/counter";
 

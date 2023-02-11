@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Популярные товары</title>
 </head>
 <body>
@@ -25,9 +26,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="catalog-products products">
-                <ul class="products-list">
-                    <li class="products-card">
+            <div class="catalog-products products swiper">
+                <ul class="products-list swiper-wrapper">
+                    <li class="products-card swiper-slide">
                         <span class="visually-hidden">Карточка товара.</span>
                         <div class="products-card-image-wrapper">
                             <a class="products-card-icon-link products-card-icon-link-like-link" href="#">
@@ -39,8 +40,14 @@
                                 <svg height="20" width="20">
                                     <use xlink:href="./img/sprite.svg#substract-icon"></use>
                                 </svg>
-                            </a>
-                            <img class="products-card-image" src="./img/empty-image.jpg" width="334" height="334" alt="Нет изображения.">
+                            </a>   
+                            <div class="product-card-image-container">
+                                <img class="products-card-image" src="./img/empty-image.jpg" width="334" height="334" alt="Нет изображения.">
+                                <img class="products-card-image" src="./img/empty-image.jpg" width="334" height="334" alt="Нет изображения.">
+                                <img class="products-card-image" src="./img/empty-image.jpg" width="334" height="334" alt="Нет изображения.">
+                                <img class="products-card-image" src="./img/empty-image.jpg" width="334" height="334" alt="Нет изображения.">
+                            </div>                         
+                            <!-- <img class="products-card-image" src="./img/empty-image.jpg" width="334" height="334" alt="Нет изображения."> -->
                             <ol class="product-card-pagination">
                                 <span class="visually-hidden">Список кнопок смены слайда в карточке товара.</span>
                                 <li class="product-card-pagination-item">
@@ -97,7 +104,7 @@
                         </div>
                     </li>
                     
-                    <li class="products-card">
+                    <li class="products-card swiper-slide">
                         <span class="visually-hidden">Карточка товара.</span>
                         <div class="products-card-image-wrapper">
                             <a class="products-card-icon-link products-card-icon-link-like-link" href="#">
@@ -165,7 +172,7 @@
                         </div>
                     </li>
 
-                    <li class="products-card">
+                    <li class="products-card swiper-slide">
                         <span class="visually-hidden">Карточка товара.</span>
                         <div class="products-card-image-wrapper">
                             <a class="products-card-icon-link products-card-icon-link-like-link" href="#">
@@ -233,12 +240,13 @@
                                     <svg class="products-card-button-icon"width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 1C0.5 0.447715 0.947715 0 1.5 0H3.88919C4.30755 0 4.6817 0.260434 4.82697 0.652768L5.69608 3H19.5C19.8095 3 20.1016 3.14331 20.2909 3.38811C20.4803 3.6329 20.5457 3.95159 20.4679 4.25117L19.3931 8.39351C19.0498 9.71634 17.8559 10.64 16.4892 10.64H7.73613L7.97647 11.3293C8.11652 11.7309 8.49534 12 8.92071 12H16C16.5523 12 17 12.4477 17 13C17 13.5523 16.5523 14 16 14H8.92071C7.6446 14 6.50815 13.1927 6.08798 11.9878L5.38414 9.96925C5.3727 9.93645 5.36298 9.90307 5.35501 9.86925L4.04079 4.28934L3.19311 2H1.5C0.947715 2 0.5 1.55228 0.5 1ZM6.26289 5L7.12021 8.64H16.4892C16.9448 8.64 17.3427 8.33211 17.4572 7.89117L18.2074 5H6.26289ZM9.5 16.5C9.5 17.3284 8.82843 18 8 18C7.17157 18 6.5 17.3284 6.5 16.5C6.5 15.6716 7.17157 15 8 15C8.82843 15 9.5 15.6716 9.5 16.5ZM16 18C16.8284 18 17.5 17.3284 17.5 16.5C17.5 15.6716 16.8284 15 16 15C15.1716 15 14.5 15.6716 14.5 16.5C14.5 17.3284 15.1716 18 16 18Z" fill="black"/>
                                     </svg>
-                                    В корзину</a>
+                                    В корзину
+                                </a>
                             </div>
                         </div>
                     </li>
                     
-                    <li class="products-card">
+                    <li class="products-card swiper-slide">
                         <span class="visually-hidden">Карточка товара.</span>
                         <div class="products-card-image-wrapper">
                             <a class="products-card-icon-link products-card-icon-link-like-link" href="#">
@@ -310,22 +318,24 @@
                             </div>
                         </div>
                     </li>
-               
                 </ul>
-                <button class="control-button button button-prev" type="button">
-                    <span class="visually-hidden">Кнопка переключения слайда. Кнопка предыдущий слайд.</span>
-                    <svg height="20" width="11">
-                        <use xlink:href="./img/sprite.svg#arrow-icon"></use>
-                    </svg>
-                </button>
-                <button class="control-button button button-next" type="button">
-                    <span class="visually-hidden">Кнопка переключения слайда. Кнопка слудующий слайд.</span>
-                    <svg height="20" width="11">
-                        <use xlink:href="./img/sprite.svg#arrow-icon"></use>
-                    </svg>
-                </button>
+
             </div>
+            <button class="control-button button button-prev" type="button">
+                <span class="visually-hidden">Кнопка переключения слайда. Кнопка предыдущий слайд.</span>
+                <svg height="20" width="11">
+                    <use xlink:href="./img/sprite.svg#arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="control-button button button-next" type="button">
+                <span class="visually-hidden">Кнопка переключения слайда. Кнопка слудующий слайд.</span>
+                <svg height="20" width="11">
+                    <use xlink:href="./img/sprite.svg#arrow-icon"></use>
+                </svg>
+            </button>            
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/app.min.js"></script>
 </body>
 </html>
